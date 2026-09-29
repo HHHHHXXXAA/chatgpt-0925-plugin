@@ -1,0 +1,102 @@
+{
+  "package": "0925-training-inheritance",
+  "package_version": "1.6.2",
+  "plugin_version": "2.6.0.2",
+  "purpose": "Full training inheritance snapshot for 0925 Business parity, based on stable 2.6.0 baseline with corner-anchored endorser default and strict Excel-grounded production.",
+  "precedence": [
+    "current_user_request",
+    "current_excel_square_content_and_asset_facts",
+    "current_excel_external_annotations_targeting_square_objects",
+    "v2.6.0_execution_asset_handoff_and_single_canvas_snapshot",
+    "v2.5.9_asset_fidelity_screenshot_difference_quality_snapshot",
+    "v2.5.7_default_four_output_and_no_collage_snapshot",
+    "v2.5.5_and_earlier_non_regression_rules",
+    "category_suggestions"
+  ],
+  "fixed_flow": [
+    "select_framework",
+    "enter_framework_number",
+    "upload_excel",
+    "confirm_plans",
+    "start_generation"
+  ],
+  "user_operation_steps_added": false,
+  "source_asset_handoff": {
+    "gate": "SOURCE_ASSET_HANDOFF_GATE",
+    "product_source_ref_required": true,
+    "logo_source_ref_required": true,
+    "endorser_source_ref_required_when_present": true,
+    "textual_substitution_for_protected_assets_forbidden": true,
+    "source_preserving_edit_or_composite_only": true,
+    "on_missing_or_unusable_source_binding": [
+      "BLOCKED_ASSET_HANDOFF",
+      "BLOCKED_COMPOSITOR"
+    ]
+  },
+  "endorser_position": {
+    "contract": "ENDORSER_POSITION_CONTRACT",
+    "priority": [
+      "excel_object_geometry",
+      "screenshot_structure",
+      "explicit_external_annotation",
+      "freeze_first_permitted_default"
+    ],
+    "freeze_across_variants": true,
+    "side_change_forbidden": true,
+    "mirror_forbidden": true,
+    "significant_position_drift_forbidden": true,
+    "significant_scale_drift_forbidden": true,
+    "default_small_corner_only": true,
+    "default_allowed_anchors": [
+      "bottom_left",
+      "bottom_right"
+    ],
+    "center_or_large_default_forbidden": true
+  },
+  "single_canvas_call": {
+    "contract": "SINGLE_CANVAS_CALL_CONTRACT",
+    "active_variant_count": 1,
+    "full_ad_concept_count": 1,
+    "canvas_count": 1,
+    "output_target_count": 1,
+    "other_variants_excluded": true,
+    "multi_variant_language_in_single_call_forbidden": true
+  },
+  "post_call": {
+    "pre_display_canvas_multiplicity_gate": true,
+    "collage_or_grid_counts_as_output": false,
+    "cropping_collage_into_outputs_forbidden": true,
+    "retry_current_variant_only": true
+  },
+  "protected_assets": {
+    "product_pixel_identity_required": true,
+    "logo_identity_required": true,
+    "endorser_identity_required": true,
+    "endorser_position_required": true,
+    "similar_generated_substitute_forbidden": true
+  },
+  "default_output": {
+    "mode": "FOUR_VARIANTS_REQUIRED",
+    "order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "independent_square_files": 4,
+    "delivery_requires_counter": 4,
+    "collage_forbidden": true
+  },
+  "quality": {
+    "fact_accuracy_percent": 100,
+    "copy_accuracy_percent": 100,
+    "premium_all_four": true,
+    "difference_may_not_change_protected_facts": true
+  },
+  "update_policy": {
+    "append_only": true,
+    "delete_or_weaken_existing_rules": false,
+    "highest_correction_rule": "R154",
+    "highest_regression_test": "T206"
+  }
+}

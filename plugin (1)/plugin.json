@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "0925",
+  "version": "2.6.0.4",
+  "description": "v2.6.0.4：在完整历史继承与2.6.0稳定基线之上，新增四图强差异化矩阵与代言人原貌原姿势角落小图锁；保留五框架、Excel唯一事实源、产品/Logo/截图/底部合同强锁和四张独立单图。",
+  "author": {
+    "name": "刘闯"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "0925",
+        "shortDescription": "跨境电商方图主图设计助手｜四图强差异化＋代言人角落原貌锁",
+        "longDescription": "v2.6.0.4 固定五框架启动、当前 Excel 唯一事实源、产品/Logo/代言人真实源锁、截图结构锁、COPY_LEDGER 零新增、BOTTOM_CONTRACT 文案与结构锁、A/B/C/D 四次独立单图；四张图必须采用明显不同的构图与视觉系统，底部文字内容和排版关系保持不变但文字框外观与配色可随画面调整；代言人保持 Excel 原貌和原姿势，缩小固定在左下或右下。",
+        "developerName": "刘闯",
+        "category": "Design",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": [
+          "请选择本次产品类目并开始解析我的 Excel 工单。",
+          "检查这份工单中的全部图片、截图、文本框、形状、DISPIMG/单元格图片、富文本重点、产品、Logo、人物、底部文案和长图底部边界。",
+          "解析完成后输出对象盘点、SCREENSHOT_FILTER_MAP、PRODUCT_LOGO_PAIR、SOURCE_MANIFEST、COPY_LEDGER、BOTTOM_CONTRACT、四套差异矩阵和推广级质量标准。"
+        ]
+      }
+    }
+  }
+}

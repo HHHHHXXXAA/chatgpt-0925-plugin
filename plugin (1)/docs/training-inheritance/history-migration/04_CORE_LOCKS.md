@@ -1,0 +1,22 @@
+# 核心继承规则
+
+PRODUCT_PIXEL_IDENTITY_ACTIVE
+产品必须来自Excel素材。
+
+LOGO_SOURCE_LOCK
+Logo必须来自Excel。
+
+ENDORSER_SOURCE_AND_ANCHOR_ACTIVE
+人物必须来自Excel，默认角落小比例。
+
+SCREENSHOT_STRUCTURE_LOCK_ACTIVE
+截图结构必须识别。
+
+COPY_LEDGER_ACTIVE
+文案只能来自允许来源。
+
+BOTTOM_CONTRACT_ACTIVE
+底部排版合同保持。
+
+JOB_SESSION_LOCK_ACTIVE
+单次任务隔离。

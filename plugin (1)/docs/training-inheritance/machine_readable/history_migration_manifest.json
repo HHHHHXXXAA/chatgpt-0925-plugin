@@ -1,0 +1,20 @@
+{
+  "package": "0925-FULL-TRAINING-HISTORY-MIGRATION",
+  "package_version": "2.6.0.3",
+  "baseline": "2.6.0",
+  "effective_runtime": "2.6.0.2_plus_full_history_inheritance",
+  "source_of_truth": "current_excel_only",
+  "history_resources": [
+    "docs/training-inheritance/history-migration/00_README.md",
+    "docs/training-inheritance/history-migration/01_VERSION_TIMELINE.md",
+    "docs/training-inheritance/history-migration/02_CHANGE_PROCESS.md",
+    "docs/training-inheritance/history-migration/03_ERROR_CASES.md",
+    "docs/training-inheritance/history-migration/04_CORE_LOCKS.md",
+    "docs/training-inheritance/history-migration/05_REGRESSION.md",
+    "docs/training-inheritance/history-migration/06_BUSINESS_GUIDE.md"
+  ],
+  "required_gates": ["FIVE_FRAMEWORK_GATE_ACTIVE","CURRENT_EXCEL_ONLY_ACTIVE","PRODUCT_PIXEL_IDENTITY_ACTIVE","LOGO_SOURCE_LOCK","ENDORSER_SOURCE_AND_ANCHOR_ACTIVE","SCREENSHOT_STRUCTURE_LOCK_ACTIVE","COPY_LEDGER_ACTIVE","BOTTOM_CONTRACT_ACTIVE","FOUR_SINGLE_IMAGE_CALLS_ACTIVE","NO_COLLAGE_ACTIVE","JOB_SESSION_LOCK_ACTIVE"],
+  "regression": "docs/regression-tests/T207_full_history_migration.md",
+  "on_failure": "BLOCKED_OR_REJECTED_QA",
+  "update_policy": "append_only_no_weakening"
+}
