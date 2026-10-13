@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "0925-dev",
+  "version": "2.6.6",
+  "description": "0925-DEV：只解析当前Excel方图框内事实与明确框外标注，锁定产品、Logo、正式文案、代言人和方图底部，按五类目框架生成四套明显不同的独立方图方案。",
+  "author": {"name": "刘闯"},
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "0925-DEV",
+        "shortDescription": "Excel方图深度解析与四套独立主图方案",
+        "longDescription": "当前Excel方图框内内容为展示事实源，指向方图的框外标注为执行指令；长图底部隔离。产品、Logo、正式文案、代言人和方图底部锁定，普通模特仅按当前工单授权变化，A/B/C/D采用明显不同视觉系统并独立输出。",
+        "developerName": "刘闯",
+        "category": "Design",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": [
+          "请选择 1 保健营养、2 母婴、3 个护清洁、4 美妆护肤、5 食品营养食品，然后上传本次当前Excel。",
+          "只展示方图框内正式内容和指向方图的框外执行标注；长图底部不进入方图。",
+          "分析完成后等待确认出方案；确认后按所选框架输出A/B/C/D四套完整方案；收到开始生成后输出四张独立方图。"
+        ]
+      }
+    }
+  }
+}
